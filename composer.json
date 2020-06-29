@@ -1,5 +1,5 @@
 {
-  "name": "samuelbie/karix",
+  "name": "karix/karix-notification",
   "type": "library",
   "description": "Allow you to use karix sms and whatsapp as custom channel in laravel notifications",
   "keywords": [
@@ -13,8 +13,7 @@
   "authors": [
     {
       "name": "Samuel Bie",
-      "email": "samuelbie@outlook.com",
-      "website": "https://samuel-bie.github.io"
+      "email": "samuelbie@outlook.com"
     }
   ],
   "minimum-stability": "dev",
@@ -24,18 +23,18 @@
     "php": "^5.5 || ^7.0",
     "ext-curl": "*",
     "guzzlehttp/guzzle": "^6.0",
-    "karixtech/karix-php": "2.0.0"
+    "karix/karix-lib": "2.0.0"
   },
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/karixtech/karix-php.git"
+      "url": "https://github.com/pratik149/karix-lib.git"
     }
   ],
   "require-dev": {},
   "autoload": {
     "psr-4": {
-      "samuelbie\\Karix\\": "src"
+      "KarixTech\\Karix\\": "src"
     }
   },
   "autoload-dev": {
@@ -44,7 +43,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "samuelbie\\Karix\\KarixServiceProvider"
+        "KarixTech\\Karix\\KarixServiceProvider"
       ]
     }
   },
