@@ -22,7 +22,7 @@ class KarixMessage
      *
      * @var string
      */
-    public $source;
+    public $from;
 
     /**
      * Setting Up the app version.
